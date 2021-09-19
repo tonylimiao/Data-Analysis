@@ -1,0 +1,43 @@
+---
+title: "Diff-in-Diff"
+output: html_document
+---
+
+```{r load-libaries-data}
+library(tidyverse)
+library(broom)
+library(modelsummary)
+library(readxl)
+
+homeless_raw <- read_excel('../Agg Homeless, Beds, Incar, Pov, Income, Rents, Climate, Elec, DrugPol (Recoded Minimal Master).xlsx')
+
+homeless <- homeless_raw %>% 
+  rename(rents_cnty_median = '50_percentile_rent_overall_cnty_median')
+```
+
+# Diff-in-diff with regression
+```{r regression}
+model_simple <- lm(overall_homeless_per10k ~ 
+                     total_jail_pop_per10k 
+                   + cannabis_legal_rec + 
+                     (total_jail_pop_per10k
+                      * cannabis_legal_rec), 
+                   data = homeless)
+tidy(model_simple)
+```
+
+
+# Diff-in-diff with regression using controls
+# Note: including shelter_bed_usage_rate causes issues
+```{r regression}
+model_simple <- lm(overall_homeless_per10k ~ 
+                     total_jail_pop_per10k 
+                   + cannabis_legal_rec + 
+                     (total_jail_pop_per10k
+                      * cannabis_legal_rec) + pop_dens + 
+                      median_household_income +
+                     rents_cnty_median + all_ages_in_poverty_percent_cnty_avg +
+                     avg_low_temp_cnty_avg,
+                   data = homeless)
+tidy(model_simple)
+```
