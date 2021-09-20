@@ -4,7 +4,7 @@ This data set is aggregated based on Department of Housing and Urban Development
 
 County-level data (aggregated at the CoC Level)
 
-All counties included in each continuum of care (CoC) area contain variables for which the mean, median, or sum is computed. As some Census population data was not available for all years of our data set, total county populations have been imputed using a mean. As such, the population density is based off of the imputed population mean data values. All population variables have been recoded to per 10,000 residents based on the summed county populations of the greater CoC region to per 10,000 residents.
+All counties included in each continuum of care (CoC) area contain variables for which the mean, median, or sum is computed. As some Census population data was not available for all years of our data set, total county populations have been imputed using a mean. As such, the population density is based off of the imputed population mean data values. All population variables have been recoded to per 10,000 residents based on the summed county populations of the greater CoC region.
 
 #Additional breakdown on the homeless subpopulations is forthcoming
 
