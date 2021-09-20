@@ -4,7 +4,7 @@ All data on homelessness set are aggregated for Department of Housing and Urban 
 
 Merging Datasets: Matching CoCs areas with Federal Information Processing Standards (FIPS) state-county codes
 
-**All independent variables in this data are aggregated at the CoC Level***
+**All independent variables in this data are aggregated at the CoC Level**
 
 All of the data collected, with the exception of the housing inventory counts and homeless data, is collected at the county level. Given that CoCs contain one or more counties, all CoCs must be matched to a list of counties so that datasets can be merged. In order to accomplish this, a dictionary of CoCs and counties was created. The unique IDs on which the datasets are merged are FIPS state-county codes and years.
 
