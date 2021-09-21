@@ -1,10 +1,10 @@
 Sample Population
 
-All data on homelessness set are aggregated for Department of Housing and Urban Development (HUD) Continuum of Care (CoC) facilities. Our sample population includes CoC facilities providing homeless services to regions that contain one or more counties. There are CoCs that are Statewide and CoCs for a Balance of State (BoS). Statewide and BoS CoCs have been removed from the data set as they will not include county-level data for comparison with the independent and control variables. Note that this would remove regions of the country which have relative-to-extremely low homeless populations. States which are excluded from the data due to having only a statewide CoC are: Delaware, Maine, Montana, North Dakota, Rhode Island, and Wyoming. Aggregating only the CoCs providing services at a county level, our sample population will include 329 CoCs, from 44 states, composed of ~758 counties, and ~258 metropolitan statistical areas (MSAs) as defined by the Office of Management and Budget (OMB).
-
-Merging Datasets: Matching CoCs areas with Federal Information Processing Standards (FIPS) state-county codes
+All data on homelessness set are aggregated for Department of Housing and Urban Development (HUD) Continuum of Care (CoC) facilities. Our sample population includes CoC facilities providing homeless services to regions that contain one or more counties. There are CoCs that are Statewide and CoCs for a Balance of State (BoS). Statewide and BoS CoCs have been removed from the data set as they do not include county-level data for comparison with the independent and control variables. Note that this would remove regions of the country which have relative-to-extremely low homeless populations. States which are excluded from the data due to having only a statewide CoC are: Delaware, Maine, Montana, North Dakota, Rhode Island, and Wyoming. Aggregating only the CoCs providing services at a county level, our sample population will include 329 CoCs, from 44 states, composed of ~758 counties, and ~258 metropolitan statistical areas (MSAs) as defined by the Office of Management and Budget (OMB).
 
 **All independent variables in this data are aggregated at the CoC Level**
+
+Merging Datasets: Matching CoCs areas with Federal Information Processing Standards (FIPS) state-county codes
 
 All of the data collected, with the exception of the housing inventory counts and homeless data, is collected at the county level. Given that CoCs contain one or more counties, all CoCs must be matched to a list of counties so that datasets can be merged. In order to accomplish this, a dictionary of CoCs and counties was created. The unique IDs on which the datasets are merged are FIPS state-county codes and years.
 
