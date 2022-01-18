@@ -1,6 +1,24 @@
-Sample Population
+Methods
 
-All data on homelessness are aggregated for Department of Housing and Urban Development (HUD) Continuum of Care (CoC) facilities. Our sample population includes CoC facilities providing homeless services to regions that contain one or more counties. There are CoCs that are Statewide and CoCs for a Balance of State (BoS). Statewide and BoS CoCs have been removed from the data set as they do not include county-level data for comparison with the independent and control variables. Note that this would remove regions of the country which have relative-to-extremely low homeless populations. States which are excluded from the data due to having only a statewide CoC are: Delaware, Maine, Montana, North Dakota, Rhode Island, and Wyoming. Aggregating only the CoCs providing services at a county level, our sample population will include 329 CoCs, from 44 states, composed of ~758 counties, and ~258 metropolitan statistical areas (MSAs) as defined by the Office of Management and Budget (OMB).
+To analyze this time-series data, a difference-in-differences (DID) Model with Multiple Time Periods (DID-MTP) is employed to estimate the group-specific average treatment effects for different groups of geographic units where the treatment was adopted at different times. The DID-MTP will also allow us to estimate how the treatment effects evolve over time for different treatment groups.
+
+Source CRAN: https://cran.r-project.org/web/packages/did/index.html
+Source package:
+
+Callaway, B., & Sant'Anna, P. (2020). did: Difference in Differences. R package. In (Version
+  2.0.0) https://bcallaway11.github.io/did/
+
+Method research:
+
+Callaway, B., & Sant’Anna, P. H. C. (2021). Difference-in-Differences with multiple time
+  periods. Journal of Econometrics, 225(2), 200-230.
+  https://doi.org/https://doi.org/10.1016/j.jeconom.2020.12.001
+
+
+
+Sample Population Criterion and Data Aggregation
+
+All data on homelessness are aggregated for Department of Housing and Urban Development (HUD) Continuum of Care (CoC) facilities. Our sample population includes CoC facilities providing homeless services to regions that contain one or more counties. There are CoCs that are Statewide and CoCs for a Balance of State (BoS). Statewide and BoS CoCs have been removed from the data set as they do not include county-level data for comparison with the independent and control variables. Note that this would remove regions of the country which have relative-to-extremely low homeless populations. States which are excluded from the data due to having only a statewide CoC are: Delaware, Maine, Montana, North Dakota, Rhode Island, and Wyoming. Aggregating only the CoCs providing services at a county level, our sample population will include 327 CoCs, from 44 states, composed of ~758 counties, and ~258 metropolitan statistical areas (MSAs) as defined by the Office of Management and Budget (OMB).
 
 All independent variables in this data are aggregated at the CoC Level
 
@@ -32,10 +50,10 @@ TH = homeless counts in transitional housing SH = Homeless occupying Safe Havens
 
 See below for exceptions where certain subpopulations are missing, changed, or did not yet exist:
 
-2007 – 2010 – The ‘Overall Veterans Homeless’ variable is missing for these years 
-2007 – 2010 – The 'Chronically homeless' variable is ‘overall chronically homeless individuals’ 
-2011 - 2020 – Changes to ‘overall chronically homeless’ 
-2007 – 2014 – The ‘overall homeless unaccompanied youth (under 25)’ variable is missing 
+2007 – 2010 – The ‘Overall Veterans Homeless’ variable is missing for these years
+2007 – 2010 – The 'Chronically homeless' variable is ‘overall chronically homeless individuals’
+2011 - 2020 – Changes to ‘overall chronically homeless’
+2007 – 2014 – The ‘overall homeless unaccompanied youth (under 25)’ variable is missing
 2007 – 2009 – Safe Haven (SH) data is missing
 
 Incarceration
