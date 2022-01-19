@@ -21,7 +21,7 @@ df['first_treated_2007_2020'] = df[~s].groupby(df['cannabis_legal_rec'].eq(0).cu
 df.first_treated_2007_2020.fillna(0,inplace=True)
 
 # testing the new script
-df['first_treated_2007_2020_2'] = df.groupby('state')['first_treated_2007_2020'].transform(lambda x: x.max)
+df['first_treated_2007_2020_2'] = df.groupby('state')['first_treated_2007_2020'].transform(lambda x: x.max())
 
 
 # In[56]:
